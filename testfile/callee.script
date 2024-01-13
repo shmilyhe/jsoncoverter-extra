@@ -1,0 +1,29 @@
+
+del(.a)
+a = test(a);
+b = t1(t2(a),c)
+e= a - b
+
+c = -.a *c1
+d= (-1+f)==b
+e=-int(c)
+
+
+c= 1!=1
+
+f = -(a+b)
+z = a+c-b/d*x
+y = (a+b)/c
+y =((a+b)/c)*((c-d)*o)
+
+if( int(a)>kkkk){
+    print('000000')
+}else if(c==2){
+    print('00000i')
+}else{
+    print('00000c')
+}
+
+each(.a){
+    .b=.c+1
+}

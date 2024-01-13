@@ -1,0 +1,75 @@
+
+//print('1');
+
+function ee(){
+    print('ee');
+     return bb(1,2);
+}
+
+function aa(){
+    print('aa');
+    return ee()+"999999";
+}
+
+//test
+function bb(a,b){
+    print(a*3);print(b);return "llll===========";
+}
+function getinfo(){
+    print(ee());
+    resp=http.get("https://kaifa.baidu.com/rest/v1/cards?wd=http");
+    print("took:"+resp.took+"ms");
+    print(resp);
+    return  String.substring(resp.data.data.summary,0,42);
+}
+
+function datax(){
+    resp=http.get("https://www.163.com");
+    print("datax,took:"+resp.took+"ms");
+    //print(resp);
+    return  resp.data;
+}
+datax();
+//print("opq")
+v=bb(.ext,.persons)
+c=aa()
+print(c)
+.value=v
+d=getinfo()
+print(d);
+print(typeof(.ext));
+bs=String.getBytes(d);
+print(typeof(bs));
+print(string(bs));
+b64=Base64.encode(bs)
+print(b64);
+print(Base64.decodeString(b64));
+each(bs){
+    .=byteValue(.>>1)
+}
+//each(bs){
+//    print(.)
+//}
+hex1=Byte.toHex(bs);
+hex2=String.toUpperCase(hex1);
+print(hex2)
+bs2=Byte.fromHex(hex2);
+print(len(bs2));
+print(Byte.toHex(bs2));
+print(Base64.encode(bs));
+print(1^2)
+print(1|2)
+print(1&2)
+.bytes=bs2
+.test[11]="c";
+.array=[1,2,getinfo()];
+
+.sp=String.split("1,2,3,6,a,c",",");
+.contains=String.contains("1,2,3,6,a,c","a");
+.pf=String.printf(" hi {} my name is {}!","eric","lee");
+
+console.info("出错了{} 第{}个参数错了","9",4);
+console.debug("出错了{} 第{}个参数错了","8",4);
+console.log("出错了{} 第{}个参数错了","!",4);
+console.warn("出错了{} 第{}个参数错了","!",4);
+console.error("出错了{} 第{}个参数错了","!",4);

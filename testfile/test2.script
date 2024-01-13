@@ -1,0 +1,20 @@
+print("script2")
+.names[12]="q"
+move(.a,b)
+tmp=0
+each(.names){ 
+    tmp=tmp+1
+    if(. ==null ){
+        .="nb"+tmp
+    }
+}
+
+.desc=title
+.opk=notExists
+if(title != null) {
+    .title=title
+}
+
+if (notExists != null ){
+    .newpro=notExists
+}
