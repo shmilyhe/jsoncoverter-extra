@@ -1,0 +1,15 @@
+.text="测试签名"
+text="abc";
+.md5=sign("md5",text);
+.sha1=sign("sha1",text);
+.sha256=sign("sha256",text);
+.sha512=sign("sha512",text);
+.md5_B64=sign("md5",text,"base64");
+console.log("sha5124:{}",sign("sha5124",text));
+key="123"
+.hmac_sha1=Byte.toHex(hmac("sha1",key,text));
+.hmac_sha256=Byte.toHex(hmac("sha256",key,text));
+.hmac_sha512=Byte.toHex(hmac("sha512",key,text));
+console.log("SHA1:{}",.hmac_sha1);
+console.log("SHA256:{}",.hmac_sha256);
+console.log("SHA512:{}",.hmac_sha512);
